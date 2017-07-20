@@ -42,10 +42,10 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="null" class="js-avatar">
+			<img src="./img/jj.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">John Doe</a></h1>
+		  <h1 class="header-author"><a href="/">YaFeng Ji</a></h1>
 		</hgroup>
 		
 
@@ -100,10 +100,10 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="null" class="js-avatar">
+				<img src="./img/jj.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">John Doe</h1>
+			  <h1 class="header-author js-header-author">YaFeng Ji</h1>
 			</hgroup>
 			
 			
@@ -151,28 +151,99 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-jj" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-yafengJ" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/20/jj/">jj</a>
+      <a class="article-title" href="/2017/07/20/yafengJ/">yafengJ</a>
     </h1>
   
 
         
-        <a href="/2017/07/20/jj/" class="archive-article-date">
-  	<time datetime="2017-07-20T06:28:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-20</time>
+        <a href="/2017/07/20/yafengJ/" class="archive-article-date">
+  	<time datetime="2017-07-20T07:51:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-20</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>here is a file connect githup</p>
+        <h3 id="HEXO-Github-搭建属于自己的博客"><a href="#HEXO-Github-搭建属于自己的博客" class="headerlink" title="HEXO+Github,搭建属于自己的博客"></a>HEXO+Github,搭建属于自己的博客</h3><p>注册github账号</p>
+<p>新建一个名为“你的用户名.github.io”的仓库，如test.github.io</p>
+<p>在电脑的某个地方新建一个文件夹hexoblog，如：F:\Workspaces\hexoblog</p>
+<p>在文件夹中点击鼠标右键-Git Bash Here</p>
+<pre><code>$ npm install -g hexo        # 安装hexo
 
+$ cd /f/Workspaces/hexoblog/
+
+$ hexo init                  # 下载依赖包
+
+$ hexo generate ( 或hexo g ) # 生成
+
+$ hexo server ( 或hexo s )   # 启动服务  http://localhost:4000 访问
+</code></pre><p>修改hexo主题：</p>
+<p>访问<a href="https://hexo.io/themes/" target="_blank" rel="external">https://hexo.io/themes/</a> 选择自己喜欢的主,如hexo-theme-yilia，clone到本地</p>
+<pre><code>$ cd /f/Workspaces/hexoblog/
+
+$ git clone https://github.com/litten/hexo-theme-yilia.git  修改_config.yml中的theme: landscape 改为 theme: yilia
+
+$ hexo clean
+
+$ hexo deploy ( 或hexo d )
+</code></pre><p>上传到github</p>
+<pre><code>修改_config.yml文件
+
+deploy:
+
+         type: git
+
+         repo: https://github.com/你自己的gitHub账号/自己的文件名.github.io.git  #
+
+         branch: master
+
+执行命令
+
+$ npm install hexo-deployer-git --save
+
+$ hexo deploy ( 或hexo d )
+</code></pre><p>访问 <a href="http://test.github.io/" target="_blank" rel="external">http://test.github.io/</a> </p>
+<p>部署步骤</p>
+<p>每次部署的步骤，可按以下三步来进行。</p>
+<pre><code>$ hexo clean
+
+$ hexo generate ( 或hexo g )
+
+$ hexo deploy ( 或hexo d )
+</code></pre><p>一些常用命令：</p>
+<pre><code>$ hexo new&quot;postName&quot;        # 新建文章
+
+
+
+$ hexo new page&quot;pageName&quot;   # 新建页面
+
+
+
+$ hexo generate             # 生成静态页面至public目录
+
+
+
+$ hexo server               # 开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）
+
+
+
+$ hexo deploy               # 将.deploy目录部署到GitHub
+
+
+
+$ hexo help                 # 查看帮助
+
+
+
+$ hexo version              # 查看Hexo的版本
+</code></pre>
       
 
       
@@ -184,7 +255,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/07/20/jj/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/07/20/yafengJ/">展开全文 >></a>
         </p>
       
 
@@ -295,7 +366,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2017 John Doe
+    		&copy; 2017 YaFeng Ji
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
